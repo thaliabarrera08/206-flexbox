@@ -11,7 +11,7 @@
    ========================================================================== */
 
 html {
-    color: #222;
+    color: rgb(17, 17, 17);
     font-size: 1em;
     line-height: 1.4;
 }
@@ -96,30 +96,35 @@ textarea {
    ========================================================================== */
 
 html {
-  background-color: #fff;
+  background-color: rgba(232, 236, 240, 0.979);
   height: 100%;
   width: 100%;
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
-  padding: 0 2em;
-  font-size: 1.25em;
+  background: url("https://media.timeout.com/images/103801713/750/422/image.jpg") no-repeat;
+  background-size: cover;
+  font-family: 'Lora';
+  padding: 1em 1em 1em 1em;
+  font-size: 1em;
   height: 100%;
-  color: #fff;
+  color: rgb(8, 8, 8);
 }
 
 header,
 footer {
-  background-color: #222;
   height: 80px;
+  margin-top: 1em;
   width: 100%;
+  background-color:white;
 }
 
 main {
-  background-color: #ccc;
+  background-color:wheat;
   height: 250px;
+  margin: 1em 0em 1em 0em;
   width: 100%;
+  
 }
 
 header,
@@ -128,6 +133,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 
 }
 
@@ -141,14 +147,16 @@ main {
 }
 
 .flex-items {
-  color: #fff;
+  color: rgb(12, 12, 12);
   line-height: 1.5em;
-  font-size: 1.6em;
-  background-color: #f16059;
+  font-size: 0.75em;
+  background-color: lightblue;
+  margin-top: 1em;
+  padding: 10px;
   width: 30%;
-  height: 200px;
+  height: 180px;
   display: flex;
-  justify-content: center;
+  justify-content: center ;
   align-items: center;
 }
 
@@ -235,11 +243,11 @@ main {
 /* If you'd like to try a different layout on Desktop and larger screens: */
 @media (min-width: 1200px) {
   #div-1,
-  #div-2{
+  #div-2{flex: 50%;
       /* set your flex value to 1 50% */
   }
 
-  #div-3 {
+  #div-3 {flex: 1 100%;
     /* set your flex value to 1 100% */
   }
 }
@@ -261,7 +269,7 @@ main {
     *,
     *:before,
     *:after {
-        background: transparent !important;
+        background: white !important;
         color: #000 !important; /* Black prints faster:
                                    http://www.sanbeiji.com/archives/953 */
         box-shadow: none !important;
